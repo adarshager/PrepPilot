@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>PrepPilot - AI Interview Preparation Studio</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "on-error-container": "#93000a", "surface-variant": "#d5e3fc", "primary": "#a33900", "secondary-container": "#dae2fd", "on-secondary-fixed": "#131b2e", "surface-bright": "#f8f9ff", "on-secondary-fixed-variant": "#3f465c", "on-error": "#ffffff", "on-secondary-container": "#5c647a", "on-primary-container": "#fffbff", "on-primary-fixed-variant": "#7f2b00", "tertiary-container": "#00873a", "on-tertiary-container": "#f7fff2", "outline-variant": "#e2bfb2", "on-background": "#0d1c2e", "on-tertiary": "#ffffff", "inverse-on-surface": "#eaf1ff", "surface-tint": "#a73a00", "error-container": "#ffdad6", "on-primary": "#ffffff", "primary-container": "#cc4900", "surface": "#f8f9ff", "inverse-primary": "#ffb599", "outline": "#8e7166", "tertiary-fixed": "#7ffc97", "surface-container-highest": "#d5e3fc", "surface-container-low": "#eff4ff", "error": "#ba1a1a", "on-primary-fixed": "#370e00", "on-tertiary-fixed-variant": "#005320", "secondary": "#565e74", "surface-dim": "#ccdbf3", "tertiary-fixed-dim": "#62df7d", "secondary-fixed-dim": "#bec6e0", "primary-fixed": "#ffdbce", "secondary-fixed": "#dae2fd", "surface-container-high": "#dce9ff", "surface-container": "#e6eeff", "tertiary": "#006b2c", "on-surface-variant": "#5a4138", "inverse-surface": "#233144", "background": "#f8f9ff", "primary-fixed-dim": "#ffb599", "on-tertiary-fixed": "#002109", "on-surface": "#0d1c2e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "1.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "margin": "3rem", "gutter": "1.5rem", "space-2xl": "4rem", "space-md": "1rem", "gutter-mobile": "1rem", "space-xl": "2.5rem" }, "fontFamily": { "display-lg-mobile": [ "Manrope" ], "headline-xl-mobile": [ "Manrope" ], "headline-lg": [ "Manrope" ], "display-lg": [ "Manrope" ], "headline-sm": [ "Manrope" ], "label-md": [ "Manrope" ], "body-md": [ "Manrope" ], "headline-xl": [ "Manrope" ], "headline-md": [ "Manrope" ], "body-lg": [ "Manrope" ], "label-lg": [ "Manrope" ], "label-sm": [ "Manrope" ], "body-sm": [ "Manrope" ] }, "fontSize": { "display-lg-mobile": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "800" } ], "headline-xl-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-lg": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-lg": [ "3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "headline-sm": [ "1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-md": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-md": [ "1rem", { "lineHeight": "1.5rem", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-xl": [ "2.5rem", { "lineHeight": "3rem", "letterSpacing": "-0.025em", "fontWeight": "700" } ], "headline-md": [ "1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "label-lg": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" } ], "label-sm": [ "0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.04em", "fontWeight": "700" } ], "body-sm": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0em", "fontWeight": "400" } ] } } } };</script><style>@media print{.noprint{display:none!important}main{padding-top:0!important}}</style></head>
+<body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-fixed selection:text-on-primary-fixed">
+<header class="noprint fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+ <div class="max-w-7xl 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 h-20 flex items-center justify-between gap-4">
+  <div class="flex items-center gap-3 sm:gap-4">
+   <div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">rocket_launch</span></div>
+    <span class="font-headline-md text-headline-md text-on-surface tracking-tight flex items-center">PrepPilot<span class="inline-block w-2 h-2 rounded-full bg-primary ml-1 self-baseline"></span></span></div>
+   <span class="hidden sm:inline-flex items-center px-3 py-1 rounded-full bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm tracking-wide uppercase">Interview Prep Generator</span></div>
+  <div class="flex items-center gap-3">
+   <span id="mode" class="hidden md:inline text-secondary font-label-sm text-label-sm"></span>
+   <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-low text-secondary font-label-sm text-label-sm shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><span class="inline-block w-1.5 h-1.5 rounded-full bg-tertiary"></span><span>Free Career Tool</span></div></div>
+ </div></header>
+
+<main class="w-full pt-20 flex-1"><div class="max-w-7xl 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-8 w-full">
+
+<div id="inputview" class="relative w-full overflow-hidden pb-16">
+ <div class="pointer-events-none absolute -top-24 right-1/4 h-96 w-96 rounded-full bg-primary-fixed/20 blur-3xl"></div>
+ <div class="pointer-events-none absolute top-40 -left-20 h-80 w-80 rounded-full bg-secondary-container/30 blur-3xl"></div>
+ <section class="relative z-10 mx-auto max-w-4xl text-center pt-2 sm:pt-4 pb-8 sm:pb-12">
+  <div class="inline-flex items-center gap-2 rounded-full bg-primary-fixed/40 px-3.5 py-1.5 shadow-sm"><span class="material-symbols-outlined text-[17px] text-primary" style="font-variation-settings:'FILL' 1;">explore</span><span class="font-label-md text-label-md uppercase tracking-wider text-on-primary-fixed-variant font-bold">AI-powered interview prep</span></div>
+  <h1 class="mt-4 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight text-on-surface tracking-tight font-extrabold text-balance">Walk into every interview prepared</h1>
+  <p class="mt-3.5 mx-auto max-w-2xl font-body-lg text-body-md sm:text-body-lg text-secondary">Paste any job description to generate targeted topics, technical questions, behavioural questions, a 7-day plan and an AI mock interview round.</p>
+  <div class="mt-6 flex flex-wrap items-center justify-center gap-3 text-secondary font-label-md text-label-md">
+   <div class="flex items-center gap-1.5 bg-surface-container-lowest/80 px-3 py-1 rounded-full shadow-sm"><span class="material-symbols-outlined text-tertiary text-[18px]">verified</span><span>Level-calibrated questions</span></div>
+   <div class="flex items-center gap-1.5 bg-surface-container-lowest/80 px-3 py-1 rounded-full shadow-sm"><span class="material-symbols-outlined text-tertiary text-[18px]">model_training</span><span>STAR answer structure</span></div>
+   <div class="flex items-center gap-1.5 bg-surface-container-lowest/80 px-3 py-1 rounded-full shadow-sm"><span class="material-symbols-outlined text-tertiary text-[18px]">mic</span><span>Scored mock interview</span></div></div>
+ </section>
+ <div class="relative z-10 mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
+  <div class="lg:col-span-7 flex flex-col gap-4">
+   <div class="rounded-2xl bg-surface-container-lowest p-6 sm:p-7 shadow-sm">
+    <div class="flex items-center justify-between pb-4 gap-3">
+     <div class="flex items-center gap-2.5"><div class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary-fixed/40 text-primary"><span class="material-symbols-outlined text-[22px]">description</span></div>
+      <div><h2 class="font-headline-md text-headline-md text-on-surface">Job description</h2><p class="font-body-sm text-body-sm text-secondary">Role scope, required stack and responsibilities</p></div></div>
+     <span class="hidden sm:inline-flex items-center gap-1 rounded-full bg-surface-container px-2.5 py-1 font-label-sm text-label-sm text-on-surface-variant"><span class="h-1.5 w-1.5 rounded-full bg-primary animate-pulse"></span>Raw paste</span></div>
+    <textarea id="jd" rows="14" placeholder="Paste the full job description here (responsibilities, technical requirements, qualifications)..." class="w-full resize-y rounded-xl bg-surface-container-low/60 p-4 font-body-md text-body-md text-on-surface placeholder:text-secondary/60 focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all duration-200"></textarea>
+    <div class="mt-3 flex flex-wrap items-center justify-between gap-3">
+     <div class="flex items-center gap-2"><span class="inline-flex items-center gap-1.5 rounded-lg bg-surface-container-high px-2.5 py-1 font-label-md text-label-md font-semibold text-on-surface"><span class="material-symbols-outlined text-[15px] text-secondary">analytics</span><span id="wc">0 words</span></span><span class="font-body-sm text-body-sm text-secondary hidden sm:inline">(Recommended: 50 - 800 words)</span></div>
+     <div class="flex items-center gap-2">
+      <button onclick="sample()" class="inline-flex items-center gap-1 rounded-lg px-2.5 py-1 font-label-md text-label-md font-semibold text-primary hover:bg-primary-fixed/30 transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">draw</span>Paste sample</button>
+      <button onclick="clr()" class="inline-flex items-center gap-1 rounded-lg px-2.5 py-1 font-label-md text-label-md font-semibold text-secondary hover:text-error hover:bg-error-container/40 transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">backspace</span>Clear</button></div></div>
+    <div class="mt-5 flex items-start gap-3 rounded-xl bg-surface-container p-3.5">
+     <span id="vi" class="material-symbols-outlined mt-0.5 text-[20px] text-secondary">info</span>
+     <div class="flex-1"><p id="vt" class="font-label-md text-label-md font-semibold text-on-surface">Tip: 50 or more words give a more accurate plan.</p>
+      <div class="mt-2 h-1.5 w-full rounded-full bg-surface-variant overflow-hidden"><div id="vp" class="h-full w-0 bg-primary transition-all duration-300 rounded-full"></div></div></div></div>
+    <p id="err" class="hidden mt-4 rounded-xl bg-error-container text-on-error-container font-label-lg text-label-lg px-4 py-3"></p>
+   </div></div>
+  <div class="lg:col-span-5 flex flex-col gap-4">
+   <div class="rounded-2xl bg-surface-container-lowest p-6 sm:p-7 shadow-sm">
+    <div class="flex items-center justify-between pb-3"><div><h2 class="font-headline-md text-headline-md text-on-surface">Experience level</h2><p class="font-body-sm text-body-sm text-secondary">Calibrates the difficulty and the questions</p></div><span class="material-symbols-outlined text-secondary text-[22px]">tune</span></div>
+    <div id="lv" class="mt-4 space-y-3"></div>
+    <div class="mt-6 flex flex-col gap-3">
+     <button id="go" onclick="run()" class="group relative flex w-full items-center justify-center gap-2.5 rounded-xl bg-primary px-6 py-4 font-headline-sm text-headline-sm text-on-primary shadow-md hover:bg-primary-container active:scale-[0.99] transition-all duration-200 disabled:opacity-80" type="button"><span id="gi" class="material-symbols-outlined text-[22px]">rocket_launch</span><span id="gl">Generate Preparation Plan</span></button>
+     <button onclick="sample()" class="flex w-full items-center justify-center gap-2 rounded-xl bg-surface-container px-4 py-3 font-label-lg text-label-lg font-semibold text-on-surface hover:bg-surface-container-high active:scale-[0.99] transition-all" type="button"><span class="material-symbols-outlined text-[19px] text-secondary">dataset</span><span>Load sample job description</span></button></div>
+    <div class="mt-5 rounded-xl bg-surface-container-low p-3.5"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">security</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Privacy</span></div>
+     <p class="mt-1 font-body-sm text-body-sm text-secondary">PrepPilot does not store your job description. In AI mode the text is sent to the AI provider you configured.</p></div>
+   </div></div>
+ </div>
+ <section class="relative z-10 mt-14 mx-auto"><div class="rounded-2xl bg-surface-container-low/80 p-6 sm:p-8">
+  <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6"><div><h3 class="font-headline-md text-headline-md text-on-surface">What PrepPilot generates from your job description</h3><p class="font-body-sm text-body-sm text-secondary">Everything is tailored to the requirements you paste</p></div><span class="font-label-md text-label-md font-bold uppercase tracking-wider text-primary">Instant prep kit</span></div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+   <div class="rounded-xl bg-surface-container-lowest p-5 shadow-sm"><div class="h-10 w-10 rounded-lg bg-primary-fixed/40 text-primary flex items-center justify-center mb-3"><span class="material-symbols-outlined text-[22px]">quiz</span></div><h4 class="font-headline-sm text-headline-sm text-on-surface">Targeted question bank</h4><p class="mt-1.5 font-body-sm text-body-sm text-secondary">10 technical and 5 behavioural questions based on the skills in the job description.</p></div>
+   <div class="rounded-xl bg-surface-container-lowest p-5 shadow-sm"><div class="h-10 w-10 rounded-lg bg-surface-container-highest text-secondary flex items-center justify-center mb-3"><span class="material-symbols-outlined text-[22px]">calendar_month</span></div><h4 class="font-headline-sm text-headline-sm text-on-surface">7-day study plan</h4><p class="mt-1.5 font-body-sm text-body-sm text-secondary">A day-by-day syllabus, plus a checklist of concepts you can tick off as you revise.</p></div>
+   <div class="rounded-xl bg-surface-container-lowest p-5 shadow-sm"><div class="h-10 w-10 rounded-lg bg-tertiary-fixed/60 text-tertiary flex items-center justify-center mb-3"><span class="material-symbols-outlined text-[22px]">fact_check</span></div><h4 class="font-headline-sm text-headline-sm text-on-surface">Scored mock interview</h4><p class="mt-1.5 font-body-sm text-body-sm text-secondary">Answer one question at a time and get a score, strengths, weaknesses and a suggested answer structure.</p></div>
+  </div></div></section>
+</div>
+
+<div id="results" class="hidden w-full space-y-8 pb-16">
+ <div class="w-full bg-inverse-surface text-inverse-on-surface rounded-[20px] p-6 sm:p-8 shadow-xl relative overflow-hidden">
+  <div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-primary/20 blur-3xl pointer-events-none"></div>
+  <div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+   <div class="space-y-3.5 max-w-3xl"><div class="flex flex-wrap items-center gap-2.5">
+     <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold tracking-wide shadow-sm"><span class="w-1.5 h-1.5 rounded-full bg-inverse-on-surface animate-pulse"></span><span id="lvl"></span></span>
+     <span class="text-inverse-on-surface/60 font-label-sm text-label-sm flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">auto_graph</span><span id="bmode"></span></span></div>
+    <h1 id="role" class="text-2xl sm:text-3xl lg:text-4xl text-surface-container-lowest font-bold tracking-tight leading-tight"></h1>
+    <p id="bsub" class="font-body-md text-body-md text-inverse-on-surface/80 max-w-2xl leading-relaxed"></p></div>
+   <div class="noprint flex flex-wrap sm:flex-nowrap lg:flex-col xl:flex-row items-stretch sm:items-center gap-3 shrink-0">
+    <button onclick="startMock(mockList())" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm font-semibold shadow-md hover:bg-primary-container hover:-translate-y-0.5 active:translate-y-0 transition-all" type="button"><span class="material-symbols-outlined text-[20px]" style="font-variation-settings:'FILL' 1;">mic</span><span>Start Mock Interview</span></button>
+    <button onclick="window.print()" class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-surface-container-highest/15 text-inverse-on-surface hover:bg-surface-container-highest/25 font-label-lg text-label-lg transition-colors" type="button"><span class="material-symbols-outlined text-[19px]">download</span><span>Print / Save PDF</span></button>
+    <button onclick="newJD()" class="inline-flex items-center justify-center gap-1.5 px-3.5 py-3 rounded-xl text-inverse-on-surface/75 hover:text-inverse-on-surface hover:bg-surface-container-highest/10 font-label-lg text-label-lg transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">arrow_back</span><span>New JD</span></button></div></div></div>
+
+ <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+  <div class="lg:col-span-7 bg-surface-container-lowest rounded-[20px] p-6 sm:p-7 shadow-sm space-y-6">
+   <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2"><div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[22px]">analytics</span><h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Interview Topics: Estimated Likelihood</h2></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Estimates based on the job description, not guarantees.</p></div><span id="tn" class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed self-start sm:self-auto font-medium"></span></div>
+   <div id="topics" class="space-y-4 pt-1"></div></div>
+  <div class="lg:col-span-5 bg-surface-container-lowest rounded-[20px] p-6 sm:p-7 shadow-sm space-y-5">
+   <div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[22px]">checklist_rtl</span><h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Study Checklist</h2></div><span id="cc" class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-tertiary/10 text-tertiary font-bold"></span></div>
+   <div class="space-y-1.5 bg-surface-container-low p-3.5 rounded-xl"><div class="flex justify-between items-center font-label-md text-label-md text-on-surface"><span class="font-semibold">Readiness progress</span><span id="cp" class="font-bold text-tertiary"></span></div><div class="w-full bg-surface-container rounded-full h-2.5 overflow-hidden"><div id="cbar" class="bg-tertiary h-full transition-all duration-300" style="width:0"></div></div></div>
+   <div id="chk" class="space-y-2.5"></div></div>
+ </div>
+
+ <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
+  <div class="bg-surface-container-lowest rounded-[20px] p-6 sm:p-7 shadow-sm space-y-5">
+   <div class="flex items-center justify-between"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-primary text-[24px]">terminal</span><div><h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Technical Questions</h2><p class="font-body-sm text-body-sm text-on-surface-variant">Based on the skills in your job description</p></div></div><span id="tcn" class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold"></span></div>
+   <div id="tq" class="space-y-3"></div></div>
+  <div class="bg-surface-container-lowest rounded-[20px] p-6 sm:p-7 shadow-sm space-y-5">
+   <div class="flex items-center justify-between"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-primary text-[24px]">groups</span><div><h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Behavioural Questions</h2><p class="font-body-sm text-body-sm text-on-surface-variant">Answer with the STAR method</p></div></div><span id="bcn" class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold"></span></div>
+   <div id="bq" class="space-y-3"></div></div>
+ </div>
+
+ <div class="bg-surface-container-lowest rounded-[20px] p-6 sm:p-7 shadow-sm space-y-6">
+  <div class="flex items-center justify-between gap-3"><div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[24px]">calendar_month</span><h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">7-Day Preparation Plan</h2></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">A daily syllabus to build up to interview day.</p></div><span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-semibold">7 days</span></div>
+  <div id="plan" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"></div></div>
+
+ <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
+  <div class="bg-surface-container-lowest rounded-[20px] p-6 sm:p-7 shadow-sm space-y-5"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-primary text-[24px]">contact_support</span><div><h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Questions to Ask the Interviewer</h2><p class="font-body-sm text-body-sm text-on-surface-variant">Show curiosity and high standards</p></div></div><div id="ask" class="space-y-3"></div></div>
+  <div class="bg-surface-container-lowest rounded-[20px] p-6 sm:p-7 shadow-sm space-y-5"><div class="flex items-center justify-between"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-primary text-[24px]">account_tree</span><div><h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Likely System-Design Topics</h2><p class="font-body-sm text-body-sm text-on-surface-variant">Practise explaining your design choices</p></div></div><span id="sdn" class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-semibold"></span></div><div id="sd" class="space-y-3"></div></div>
+ </div>
+</div>
+</div></main>
+<footer class="noprint w-full bg-surface-container-low mt-auto"><div class="max-w-7xl 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-8 flex flex-col sm:flex-row items-center justify-between gap-3"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-on-surface">PrepPilot</span><span class="font-body-sm text-body-sm text-on-surface-variant">Interview prep generator and mock interview</span></div><div class="font-label-md text-label-md text-on-surface-variant">Estimates and feedback are guidance, not guarantees.</div></div></footer>
+
+<div id="mock" class="noprint hidden fixed inset-0 z-[60] overflow-y-auto">
+ <div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-md"></div>
+ <div class="relative min-h-full p-3 sm:p-6 md:p-8 flex items-center justify-center">
+  <div class="relative z-10 w-full max-w-[940px] bg-surface-container-lowest rounded-2xl shadow-2xl overflow-hidden flex flex-col">
+   <header class="bg-[#0F172A] text-on-primary-container px-5 sm:px-6 py-4 flex flex-col gap-3">
+    <div class="flex items-center justify-between gap-3">
+     <div class="flex items-center gap-3 min-w-0"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-white shrink-0"><span class="material-symbols-outlined text-[18px]">psychology</span></div>
+      <div class="flex items-center gap-2 flex-wrap"><span class="font-headline-sm text-headline-sm tracking-tight text-white">Mock Interview</span><span id="mlevel" class="px-2.5 py-0.5 rounded-full bg-surface-container-highest/20 text-surface-container-highest font-label-sm text-label-sm uppercase tracking-wider"></span></div></div>
+     <div class="flex items-center gap-2 sm:gap-4 shrink-0">
+      <div class="hidden sm:flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-white font-label-md text-label-md"><span class="material-symbols-outlined text-primary-fixed-dim text-[16px]">timer</span><span id="mtimer" class="font-semibold tabular-nums">00:00</span></div>
+      <span id="mnum" class="px-2.5 py-1 rounded-full bg-primary/20 text-primary-fixed font-label-md text-label-md font-semibold whitespace-nowrap"></span>
+      <button onclick="closeMock()" class="text-white/60 hover:text-white p-1 rounded-lg hover:bg-white/10 transition-colors" title="Close"><span class="material-symbols-outlined text-[20px]">close</span></button></div></div>
+    <div class="w-full bg-white/10 h-1.5 rounded-full overflow-hidden"><div id="mbar" class="bg-primary-container h-full rounded-full transition-all duration-500 ease-out" style="width:0"></div></div></header>
+   <div class="max-h-[82vh] overflow-y-auto px-5 py-6 md:px-8 md:py-8 flex flex-col gap-6 bg-surface-bright">
+    <div id="qview" class="flex flex-col gap-6">
+     <section class="flex flex-col gap-2.5">
+      <div><span id="mk" class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold tracking-wide uppercase"></span></div>
+      <h2 id="mq" class="font-headline-lg text-headline-lg text-[#0F172A] tracking-tight"></h2>
+      <div class="flex items-start gap-2 bg-surface-container-low p-3.5 rounded-xl"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5 shrink-0">lightbulb</span><p class="font-body-sm text-body-sm text-secondary"><span class="font-semibold text-on-surface">Tip:</span> answer as you would in a real interview. Aim for 60-120 words and include an example or a number.</p></div></section>
+     <section id="abox" class="flex flex-col gap-2">
+      <div class="flex items-center justify-between"><label for="ans" class="font-label-lg text-label-lg text-on-surface font-semibold">Your Answer</label><span id="stats" class="font-label-md text-label-md text-secondary">0 words</span></div>
+      <div class="bg-surface-container-lowest rounded-xl shadow-sm focus-within:shadow-md transition-shadow"><textarea id="ans" rows="6" placeholder="Type your answer here..." class="w-full p-4 rounded-xl font-body-md text-body-md text-[#0F172A] leading-relaxed resize-y focus:outline-none placeholder:text-secondary/50 bg-transparent"></textarea></div>
+      <p id="merr" class="hidden font-label-md text-label-md text-error font-semibold"></p>
+      <div class="flex items-center justify-end gap-3 pt-1"><button onclick="skipQ()" class="px-4 py-2 rounded-xl text-secondary hover:text-on-surface font-label-lg text-label-lg transition-colors hover:bg-surface-container-low" type="button">Skip question</button>
+       <button id="sub" onclick="submitA()" class="px-5 py-2 rounded-xl bg-primary-container text-on-primary-container font-label-lg text-label-lg font-semibold hover:bg-primary transition-transform active:scale-95 shadow-sm inline-flex items-center gap-1.5 disabled:opacity-70" type="button"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span id="subl">Submit answer</span></button></div></section>
+     <section id="fb" class="hidden flex flex-col gap-5 bg-surface-container-lowest rounded-2xl p-5 sm:p-6 shadow-sm">
+      <div class="flex items-center gap-4"><div class="relative w-16 h-16 shrink-0 flex items-center justify-center"><svg class="w-16 h-16 transform -rotate-90" viewBox="0 0 36 36"><path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path><path id="ring" class="text-tertiary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="0, 100" stroke-linecap="round" stroke-width="3.5"></path></svg>
+       <div class="absolute inset-0 flex flex-col items-center justify-center"><span class="font-headline-md text-headline-md font-bold text-[#0F172A] leading-none"><span id="scn"></span><span class="text-secondary text-[12px] font-normal">/10</span></span></div></div>
+       <div><div id="sv" class="font-headline-sm text-headline-sm text-[#0F172A]"></div><p id="fmode" class="font-body-sm text-body-sm text-secondary"></p></div></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+       <div class="bg-surface-container-low p-4 rounded-xl flex flex-col gap-3"><div class="flex items-center gap-1.5 text-tertiary font-label-lg text-label-lg font-bold"><span class="material-symbols-outlined text-[18px]">verified</span><span>Demonstrated Strengths</span></div><ul id="st" class="flex flex-col gap-2.5 font-body-sm text-body-sm text-on-surface"></ul></div>
+       <div class="bg-surface-container-low p-4 rounded-xl flex flex-col gap-3"><div class="flex items-center gap-1.5 text-primary font-label-lg text-label-lg font-bold"><span class="material-symbols-outlined text-[18px]">warning</span><span>Areas to Improve</span></div><ul id="wk" class="flex flex-col gap-2.5 font-body-sm text-body-sm text-on-surface"></ul></div></div>
+      <div class="bg-surface-container-high/60 rounded-xl p-4 flex flex-col gap-2"><span class="font-label-lg text-label-lg text-[#0F172A] font-bold flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[18px]">account_tree</span>Suggested Answer Structure</span><p id="stru" class="font-body-md text-body-md text-on-surface"></p><p id="outl" class="font-body-sm text-body-sm text-secondary"></p></div>
+      <div class="flex items-center justify-end pt-1"><button id="nx" onclick="nextQ()" class="px-6 py-2.5 rounded-xl bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold hover:bg-primary transition-all shadow-md hover:shadow-lg active:scale-95 inline-flex items-center gap-2" type="button"><span id="nxl">Next Question</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div></section>
+     <section class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+      <button onclick="$('aggc').classList.toggle('hidden');$('aggar').classList.toggle('rotate-180')" class="w-full px-5 py-3.5 flex items-center justify-between text-left hover:bg-surface-container-low transition-colors" type="button"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-[20px]">analytics</span><div><span class="font-label-lg text-label-lg font-bold text-[#0F172A]">Session Performance</span><span class="text-secondary font-label-sm text-label-sm ml-2">Current average: <strong id="aggavg" class="text-tertiary">--</strong> / 10</span></div></div><span id="aggar" class="material-symbols-outlined text-secondary transition-transform duration-200">expand_more</span></button>
+      <div id="aggc" class="px-5 pb-5 pt-1"><div id="tiles" class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2"></div></div></section>
+    </div>
+    <div id="sumv" class="hidden flex flex-col gap-5">
+     <div class="text-center"><div class="font-label-md text-label-md font-bold uppercase tracking-wider text-primary">Interview complete</div><div id="avg" class="font-headline-xl text-headline-xl text-[#0F172A] my-1"></div><div class="font-body-sm text-body-sm text-secondary">average score out of 10</div></div>
+     <div id="rl" class="grid grid-cols-1 sm:grid-cols-2 gap-2"></div>
+     <div class="flex items-center justify-between pt-2"><button onclick="startMock(M.list)" class="px-3 py-1.5 text-primary hover:bg-primary-fixed/30 rounded-lg font-label-md text-label-md font-semibold transition-colors inline-flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[16px]">restart_alt</span>Restart interview</button><button onclick="closeMock()" class="px-4 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors" type="button">Close</button></div></div>
+   </div></div></div></div>
+
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const FI=`style="font-variation-settings:'FILL' 1;"`;
+const LV=[["Fresher","Fresher","Entry Level","New graduate. Core algorithms, CS fundamentals and quick problem solving."],["Junior (1-3 yrs)","Junior (1-3 yrs)","Early Career","Practical feature shipping, debugging, code reviews and test rigor."],["Mid-level (3-6 yrs)","Mid-level (3-6 yrs)","Mid Career","Independent ownership, scalable systems and cross-team execution."],["Senior (6+ yrs)","Senior (6+ yrs)","Lead & Staff","Distributed systems, high-leverage trade-offs and mentoring."]];
+const DAYI=["flag","code","school","edit_note","account_tree","record_voice_over","task_alt"];
+let LEVEL="Fresher",P=null,M=null,JD="",TMR=null,T0=0;
+function drawLevels(){$("lv").innerHTML=LV.map(([v,t,tag,d])=>{const on=v===LEVEL;return `<label onclick="LEVEL='${v}';drawLevels()" class="group relative flex cursor-pointer items-start justify-between rounded-xl p-4 transition-all duration-200 ${on?"bg-primary-fixed/30 shadow-sm":"bg-surface-container-low hover:bg-surface-container"}"><div class="flex items-start gap-3"><div class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full ${on?"bg-primary":"bg-surface-container-highest"}"><span class="h-2 w-2 rounded-full bg-surface-container-lowest ${on?"opacity-100":"opacity-0"}"></span></div><div><div class="flex flex-wrap items-center gap-2"><span class="font-headline-sm text-headline-sm ${on?"text-on-primary-fixed":"text-on-surface"}">${t}</span><span class="rounded-full px-2 py-0.5 font-label-sm text-label-sm ${on?"bg-primary text-on-primary font-semibold":"bg-surface-container-high text-secondary"}">${tag}</span></div><p class="mt-1 font-body-sm text-body-sm ${on?"text-on-surface-variant font-medium":"text-secondary"}">${d}</p></div></div>${on?`<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5" ${FI}>check_circle</span>`:""}</label>`}).join("")}
+drawLevels();
+function words(s){return s.trim().split(/\s+/).filter(Boolean).length}
+function wcUpd(){const n=words($("jd").value);$("wc").textContent=n+(n==1?" word":" words");$("vp").style.width=Math.min(100,n*2)+"%";
+ $("vt").textContent=n>=50?"Looks good. There is enough detail for an accurate plan.":"Tip: 50 or more words give a more accurate plan.";$("vi").textContent=n>=50?"check_circle":"info";$("vi").className="material-symbols-outlined mt-0.5 text-[20px] "+(n>=50?"text-tertiary":"text-secondary")}
+$("jd").addEventListener("input",wcUpd);
+function clr(){$("jd").value="";wcUpd()}
+async function api(url,body){
+ let msg="";
+ for(let i=0;i<3;i++){
+  try{const r=await fetch(url,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
+   const x=await r.text();let j=null;try{j=JSON.parse(x)}catch(_){}
+   if(j&&r.ok)return j;if(j&&j.error&&r.status<500)throw new Error(j.error);
+   msg=(j&&j.error)||"The server is waking up or busy."}
+  catch(e){if(e.name!=="TypeError")throw e;msg="Network problem. Check your connection."}
+  if(i<2)await new Promise(z=>setTimeout(z,6000));
+ }
+ throw new Error(msg+" Please try again in a minute.");
+}
+async function run(){
+ $("err").classList.add("hidden");JD=$("jd").value;$("go").disabled=true;$("gi").textContent="progress_activity";$("gi").classList.add("animate-spin");$("gl").textContent="Building your plan...";
+ try{show(await api("/api/plan",{jd:JD,level:LEVEL}))}catch(e){$("err").textContent=e.message;$("err").classList.remove("hidden")}
+ $("go").disabled=false;$("gi").textContent="rocket_launch";$("gi").classList.remove("animate-spin");$("gl").textContent="Generate Preparation Plan";
+}
+const qrow=(q,i,k)=>`<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div class="flex items-start gap-3 min-w-0"><span class="font-headline-sm text-headline-sm text-primary font-bold">${String(i+1).padStart(2,"0")}</span><span class="font-body-md text-body-md font-semibold text-on-surface">${esc(q)}</span></div><button onclick="practice('${k}',${i})" class="noprint self-end sm:self-auto shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[16px]">play_arrow</span>Practice</button></div>`;
+const checks=()=>{try{return JSON.parse(localStorage.getItem("pp_checks")||"{}")}catch(_){return{}}};
+function show(p){
+ P=p;$("inputview").classList.add("hidden");$("results").classList.remove("hidden");
+ $("lvl").textContent=p.level;$("bmode").textContent=p.mode;$("mode").textContent=p.mode;$("mode").title=p.ai_error||"";
+ $("role").textContent="Preparation plan for "+p.role;$("bsub").textContent="Built from the skills and requirements in your job description and calibrated for "+p.level+".";
+ $("tn").textContent=p.topics.length+" core topics";
+ $("topics").innerHTML=p.topics.map((t,i)=>{const hi=t.likelihood>=75;return `<div class="space-y-1.5"><div class="flex items-center justify-between gap-3"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold">${i+1}. ${esc(t.topic)}</span><span class="font-headline-sm text-headline-sm ${hi?"text-primary":"text-inverse-surface"} font-bold">${t.likelihood}%</span></div><div class="w-full bg-surface-container rounded-full h-2.5 overflow-hidden"><div class="${hi?"bg-primary":"bg-inverse-surface"} h-full rounded-full" style="width:${t.likelihood}%"></div></div><p class="font-body-sm text-body-sm text-on-surface-variant">${esc(t.reason)}</p></div>`}).join("");
+ const ck=checks();$("chk").innerHTML=p.concepts.map(c=>`<label class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer gap-2"><div class="flex items-center gap-3 min-w-0"><input type="checkbox" class="ck w-4 h-4 rounded accent-primary cursor-pointer" data-k="${esc(c)}" ${ck[c]?"checked":""}><span class="ct font-body-md text-body-md text-on-surface">${esc(c)}</span></div><span class="dn hidden shrink-0 font-label-sm text-label-sm px-2 py-0.5 rounded bg-tertiary/15 text-tertiary font-semibold">Done</span></label>`).join("");updCk();
+ $("tcn").textContent=p.technical.length+" questions";$("bcn").textContent=p.behavioural.length+" questions";
+ $("tq").innerHTML=p.technical.map((q,i)=>qrow(q,i,"technical")).join("");$("bq").innerHTML=p.behavioural.map((q,i)=>qrow(q,i,"behavioural")).join("");
+ $("plan").innerHTML=p.plan.map((d,i)=>`<div class="bg-surface-container-low rounded-2xl p-4 hover:bg-surface-container transition-all"><div class="space-y-3"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm uppercase tracking-wider font-extrabold text-primary">Day ${String(d.day).padStart(2,"0")}</span><span class="material-symbols-outlined text-primary text-[18px]">${DAYI[i%7]}</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">${esc(d.focus)}</h3><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant pt-1">${d.tasks.map(t=>`<li class="flex items-start gap-1.5"><span class="text-primary font-bold">&bull;</span><span>${esc(t)}</span></li>`).join("")}</ul></div></div>`).join("");
+ $("ask").innerHTML=p.ask.map((x,i)=>`<div class="p-4 rounded-xl bg-surface-container-low"><div class="flex items-start gap-2.5"><span class="w-5 h-5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold flex items-center justify-center shrink-0 mt-0.5">${i+1}</span><p class="font-body-md text-body-md text-on-surface font-semibold">"${esc(x)}"</p></div></div>`).join("");
+ $("sdn").textContent=p.system_design.length+" topics";
+ $("sd").innerHTML=p.system_design.map((x,i)=>`<div class="p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all"><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">${i+1}. ${esc(x)}</h3></div>`).join("");
+ window.scrollTo({top:0,behavior:"smooth"});
+}
+function updCk(){const c=[...document.querySelectorAll(".ck")],s={};
+ c.forEach(k=>{const lab=k.closest("label");lab.querySelector(".ct").classList.toggle("line-through",k.checked);lab.querySelector(".ct").classList.toggle("opacity-70",k.checked);lab.querySelector(".dn").classList.toggle("hidden",!k.checked);if(k.checked)s[k.dataset.k]=1});
+ try{localStorage.setItem("pp_checks",JSON.stringify(s))}catch(_){}
+ const n=c.filter(k=>k.checked).length,pc=c.length?Math.round(100*n/c.length):0;$("cc").textContent=`${n} of ${c.length} done`;$("cp").textContent=pc+"% ready";$("cbar").style.width=pc+"%"}
+document.addEventListener("change",e=>{if(e.target.classList.contains("ck"))updCk()});
+function newJD(){P=null;$("results").classList.add("hidden");$("inputview").classList.remove("hidden");window.scrollTo({top:0,behavior:"smooth"})}
+const mockList=()=>[...P.technical.slice(0,5).map(q=>({q,kind:"technical"})),...P.behavioural.slice(0,3).map(q=>({q,kind:"behavioural"}))];
+function practice(k,i){startMock([{q:(k==="technical"?P.technical:P.behavioural)[i],kind:k}])}
+function startMock(list){M={list,i:0,res:[]};$("mock").classList.remove("hidden");document.body.style.overflow="hidden";$("mlevel").textContent=P?P.level:LEVEL;
+ clearInterval(TMR);T0=Date.now();$("mtimer").textContent="00:00";TMR=setInterval(()=>{const s=Math.floor((Date.now()-T0)/1000);$("mtimer").textContent=String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0")},1000);showQ()}
+function closeMock(){clearInterval(TMR);$("mock").classList.add("hidden");document.body.style.overflow=""}
+function agg(){const s=M.res.filter(r=>r.score!=null);$("aggavg").textContent=s.length?(s.reduce((a,r)=>a+r.score,0)/s.length).toFixed(1):"--";
+ $("tiles").innerHTML=M.list.map((it,i)=>{const r=M.res[i],cur=i===M.i&&!r;const sc=r?(r.score==null?"skipped":r.score+"/10"):"--/10";const lab=r?(r.score==null?"Skipped":r.score>=8?"Exemplary":r.score>=6?"Strong":"Needs work"):(cur?"Current":"Queued");
+  return `<div class="p-3 rounded-lg flex flex-col ${cur?"bg-primary-fixed/30":r?"bg-surface-container-low":"bg-surface-container-low/50 opacity-60"}"><span class="font-label-sm text-label-sm ${cur?"text-primary font-semibold":"text-secondary"} truncate">Q${i+1}: ${esc(it.q.split(" ").slice(0,4).join(" "))}...</span><div class="flex items-baseline justify-between mt-1"><span class="font-headline-sm text-headline-sm font-bold">${sc}</span><span class="font-label-sm text-label-sm text-secondary font-semibold">${lab}</span></div></div>`}).join("")}
+function showQ(){const q=M.list[M.i];$("sumv").classList.add("hidden");$("qview").classList.remove("hidden");$("abox").classList.remove("hidden");$("fb").classList.add("hidden");$("merr").classList.add("hidden");
+ $("mnum").textContent=`Question ${M.i+1} of ${M.list.length}`;$("mbar").style.width=(100*M.i/M.list.length)+"%";$("mk").textContent=q.kind==="technical"?"Technical":"Behavioural";$("mq").textContent=q.q;$("ans").value="";$("stats").textContent="0 words";agg();$("ans").focus()}
+$("ans").addEventListener("input",()=>$("stats").textContent=words($("ans").value)+" words");
+async function submitA(){
+ const q=M.list[M.i],a=$("ans").value.trim();$("merr").classList.add("hidden");$("sub").disabled=true;$("subl").textContent="Evaluating...";
+ try{const d=await api("/api/evaluate",{question:q.q,answer:a,kind:q.kind,level:P?P.level:LEVEL,jd:JD});M.res[M.i]={q:q.q,score:d.score};
+  $("ring").setAttribute("stroke-dasharray",d.score*10+", 100");$("ring").setAttribute("class",d.score>=7?"text-tertiary":d.score>=5?"text-primary":"text-error");
+  $("scn").textContent=d.score;$("sv").textContent=d.score>=7?"Strong Response":d.score>=5?"Decent, can be sharper":"Needs More Work";$("fmode").textContent=d.mode;$("fmode").title=d.ai_error||"";
+  const li=(a,ic,c)=>a.map(x=>`<li class="flex items-start gap-2"><span class="material-symbols-outlined ${c} text-[18px] shrink-0 mt-0.5">${ic}</span><span>${esc(x)}</span></li>`).join("");
+  $("st").innerHTML=li(d.strengths,"check_circle","text-tertiary")||"<li>-</li>";$("wk").innerHTML=li(d.weaknesses,"error","text-primary")||"<li>Nothing major</li>";
+  $("stru").textContent=d.structure;$("outl").textContent=d.outline?"A strong answer includes: "+d.outline:"";
+  $("nxl").textContent=M.i+1>=M.list.length?"See results":`Next Question (${M.i+2} of ${M.list.length})`;$("abox").classList.add("hidden");$("fb").classList.remove("hidden");agg();
+ }catch(e){$("merr").textContent=e.message;$("merr").classList.remove("hidden")}
+ $("sub").disabled=false;$("subl").textContent="Submit answer";
+}
+function skipQ(){M.res[M.i]={q:M.list[M.i].q,score:null};nextQ()}
+function nextQ(){M.i++;if(M.i<M.list.length)return showQ();
+ clearInterval(TMR);$("mbar").style.width="100%";$("mnum").textContent="Finished";$("qview").classList.add("hidden");$("sumv").classList.remove("hidden");
+ const s=M.res.filter(r=>r.score!=null);$("avg").textContent=s.length?(s.reduce((x,r)=>x+r.score,0)/s.length).toFixed(1):"-";
+ $("rl").innerHTML=M.res.map((r,i)=>`<div class="flex items-center gap-3 rounded-xl bg-surface-container-low p-3 font-body-sm text-body-sm"><span class="font-bold text-primary w-6">${i+1}</span><span class="flex-1 text-on-surface">${esc(r.q)}</span><span class="font-bold text-on-surface whitespace-nowrap">${r.score==null?"skipped":r.score+"/10"}</span></div>`).join("")}
+function sample(){$("jd").value="Software Development Engineer - Amazon\nWe are looking for a Software Development Engineer to build scalable, high-performance services. You will design and develop REST APIs, work with distributed systems on AWS, and write clean, well-tested code.\nRequirements: strong knowledge of data structures and algorithms; proficiency in Java or Python; experience with SQL and NoSQL databases; familiarity with Docker and CI/CD; unit testing; Agile teamwork; excellent communication and problem-solving skills.";wcUpd()}
+</script></body></html>
